@@ -15,19 +15,17 @@
     }
     .three-days{
         width:98%;
-        height:75%;
+        height:70%;
         .react-tabs__tab{
             width:45%;
         }
     }
     .search-section{
         display: flex;
-        height:25%;
+        height:20%;
         flex-direction: column;
         width:100%;
-        justify-content: center;
         align-items: center;
-        margin-top: 2%;
         .search-box{
             position: relative;
             margin-top: 50px;
@@ -74,7 +72,7 @@
         }
         .button-view{
             margin-top: 10px;
-            height: 25%;
+            height: 15%;
             width: 40%;
             .button-get {
                 color: #fff !important;
