@@ -37,7 +37,7 @@ export default class MainUi extends React.Component
 
 
 
-        const URL=`http://api.openweathermap.org/data/2.5/forecast?q=${this.state.cityName}&appid=${API_KEY}`
+        const URL=`https://api.openweathermap.org/data/2.5/forecast?q=${this.state.cityName}&appid=${API_KEY}`
         axios.get(URL).then(res=>{
             return(res.data);
         }).then(data=>{
