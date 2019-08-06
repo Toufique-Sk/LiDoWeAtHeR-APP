@@ -17,12 +17,14 @@ export default class MainUi extends React.Component
             today:[{dt_txt:"NA", weather:{0:{main:"NA"}}, main:{ temp_max:"NA", temp_min:"NA" , humidity:"NA"}}],
             tomorrow:[{dt_txt:"NA", weather:{0:{main:"NA"}}, main:{ temp_max:"NA", temp_min:"NA" , humidity:"NA"}}],
             //after:[{dt_txt:"NA", weather:{0:{main:"NA"}}, main:{ temp_max:"NA", temp_min:"NA" , humidity:"NA"}}],
+            hideData:false
         };
        
     }
 
     handleChange = event => {
         this.setState({ cityName: event.target.value});
+
       };
 
     getWeather()
@@ -41,6 +43,7 @@ export default class MainUi extends React.Component
         axios.get(URL).then(res=>{
             return(res.data);
         }).then(data=>{
+            this.setState({hideData:true})
             var tod=[],tom=[];
             for(let i in data.list)
             {
@@ -81,25 +84,29 @@ export default class MainUi extends React.Component
                         <button className="button-get" onClick={this.getWeather.bind(this)}>Get Weather</button>
                     </div>
                 </div>
-                <div className="three-days">
-                    <Tabs>
-                    <TabList className="list">
-                        <Tab>Today</Tab>
-                        <Tab>Tomorrow</Tab>
-                    </TabList>
-                
-                    <TabPanel>
-                        {this.state.today.map((info)=>{
-                                return <ThreeHourlyInfo passedData={info}/>
-                        })}
-                    </TabPanel>
-                    <TabPanel>
-                        {this.state.tomorrow.map((info)=>{
-                                return <ThreeHourlyInfo passedData={info}/>
-                        })}
-                    </TabPanel>
-                    </Tabs>
-                </div>
+                {
+                    this.state.hideData?
+                    <div className="three-days">
+                        <Tabs>
+                        <TabList className="list">
+                            <Tab>Today</Tab>
+                            <Tab>Tomorrow</Tab>
+                        </TabList>
+                    
+                        <TabPanel>
+                            {this.state.today.map((info)=>{
+                                    return <ThreeHourlyInfo passedData={info}/>
+                            })}
+                        </TabPanel>
+                        <TabPanel>
+                            {this.state.tomorrow.map((info)=>{
+                                    return <ThreeHourlyInfo passedData={info}/>
+                            })}
+                        </TabPanel>
+                        </Tabs>
+                    </div>
+                    :null
+                }
       </div>
     }
 }
