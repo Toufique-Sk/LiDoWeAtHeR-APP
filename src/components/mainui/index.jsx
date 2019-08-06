@@ -41,7 +41,7 @@ export default class MainUi extends React.Component
         axios.get(URL).then(res=>{
             return(res.data);
         }).then(data=>{
-            var tod=[],tom=[],ten=[];
+            var tod=[],tom=[];
             for(let i in data.list)
             {
                 if(data.list[i].dt_txt.split(" ")[0]===todaysDate){
@@ -58,7 +58,7 @@ export default class MainUi extends React.Component
             }
             this.setState({today:tod});
             this.setState({tomorrow:tom});
-            this.setState({after:ten});
+            //this.setState({after:ten});
             //console.log(tod);
             //console.log(tom);
             //console.log(ten);
