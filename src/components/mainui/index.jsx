@@ -16,7 +16,7 @@ export default class MainUi extends React.Component
         this.state={
             today:[{dt_txt:"NA", weather:{0:{main:"NA"}}, main:{ temp_max:"NA", temp_min:"NA" , humidity:"NA"}}],
             tomorrow:[{dt_txt:"NA", weather:{0:{main:"NA"}}, main:{ temp_max:"NA", temp_min:"NA" , humidity:"NA"}}],
-            after:[{dt_txt:"NA", weather:{0:{main:"NA"}}, main:{ temp_max:"NA", temp_min:"NA" , humidity:"NA"}}],
+            //after:[{dt_txt:"NA", weather:{0:{main:"NA"}}, main:{ temp_max:"NA", temp_min:"NA" , humidity:"NA"}}],
         };
        
     }
@@ -51,9 +51,9 @@ export default class MainUi extends React.Component
                 {
                     tom.push(data.list[i]);
                 }
-                else{
+                /*else{
                     ten.push(data.list[i]);
-                }
+                }*/
                 
             }
             this.setState({today:tod});
