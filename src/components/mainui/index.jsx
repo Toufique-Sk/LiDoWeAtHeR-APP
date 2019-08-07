@@ -45,6 +45,7 @@ export default class MainUi extends React.Component
         }).then(data=>{
             this.setState({hideData:true})
             var tod=[],tom=[];
+
             for(let i in data.list)
             {
                 if(data.list[i].dt_txt.split(" ")[0]===todaysDate){
@@ -86,7 +87,7 @@ export default class MainUi extends React.Component
                 </div>
                 {
                     this.state.hideData?
-                    <div className="three-days">
+                    <div className="two-days">
                         <Tabs>
                         <TabList className="list">
                             <Tab>Today</Tab>

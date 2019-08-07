@@ -13,16 +13,21 @@
         
         
     }
-    .three-days{
+
+    .hr-line{
+        margin-right: 2%;
+    }
+    .two-days{
         width:98%;
-        height:80%;
+        height:fit-content;
+        
         .react-tabs__tab{
             width:45%;
         }
     }
     .search-section{
         display: flex;
-        height:20%;
+        height:fit-content;
         flex-direction: column;
         width:100%;
         align-items: center;

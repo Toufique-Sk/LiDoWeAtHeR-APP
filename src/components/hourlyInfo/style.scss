@@ -4,8 +4,13 @@
     .data-view{
         display: flex;
         flex-direction: row;
+        
         .time-view{
             width:50%;
+            
+        }
+        .info-view{
+            width:40%
         }
     }
 }
