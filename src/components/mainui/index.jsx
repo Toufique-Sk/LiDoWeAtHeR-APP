@@ -14,8 +14,8 @@ export default class MainUi extends React.Component
     {
         super(props);
         this.state={
-            today:[{dt_txt:"NA", weather:{0:{main:"NA"}}, main:{ temp_max:"NA", temp_min:"NA" , humidity:"NA"}}],
-            tomorrow:[{dt_txt:"NA", weather:{0:{main:"NA"}}, main:{ temp_max:"NA", temp_min:"NA" , humidity:"NA"}}],
+            today:[{dt_txt:"N:A:A", weather:{0:{main:"NA"}}, main:{ temp_max:"NA", temp_min:"NA" , humidity:"NA"}}],
+            tomorrow:[{dt_txt:"N:A:A", weather:{0:{main:"NA"}}, main:{ temp_max:"NA", temp_min:"NA" , humidity:"NA"}}],
             //after:[{dt_txt:"NA", weather:{0:{main:"NA"}}, main:{ temp_max:"NA", temp_min:"NA" , humidity:"NA"}}],
             hideData:false
         };
