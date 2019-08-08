@@ -2,7 +2,7 @@ import React from "react";
 import "./style.scss"
 import axios from "axios";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import "react-tabs/style/react-tabs.css";
+import "react-tabs/style/react-tabs.scss";
 import ThreeHourlyInfo from "../hourlyInfo";
 
 
@@ -88,6 +88,7 @@ export default class MainUi extends React.Component
                 {
                     this.state.hideData?
                     <div className="two-days">
+                        
                         <Tabs>
                             <TabList className="list">
                                 <Tab>Today</Tab>
