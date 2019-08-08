@@ -14,8 +14,8 @@ export default class MainUi extends React.Component
     {
         super(props);
         this.state={
-            today:[{dt_txt:"NA", weather:{0:{main:"NA"}}, main:{ temp_max:"NA", temp_min:"NA" , humidity:"NA"}}],
-            tomorrow:[{dt_txt:"NA", weather:{0:{main:"NA"}}, main:{ temp_max:"NA", temp_min:"NA" , humidity:"NA"}}],
+            today:[{dt_txt:"N:A:A", weather:{0:{main:"NA"}}, main:{ temp_max:"NA", temp_min:"NA" , humidity:"NA"}}],
+            tomorrow:[{dt_txt:"N:A:A", weather:{0:{main:"NA"}}, main:{ temp_max:"NA", temp_min:"NA" , humidity:"NA"}}],
             //after:[{dt_txt:"NA", weather:{0:{main:"NA"}}, main:{ temp_max:"NA", temp_min:"NA" , humidity:"NA"}}],
             hideData:false
         };
@@ -45,6 +45,7 @@ export default class MainUi extends React.Component
         }).then(data=>{
             this.setState({hideData:true})
             var tod=[],tom=[];
+
             for(let i in data.list)
             {
                 if(data.list[i].dt_txt.split(" ")[0]===todaysDate){
@@ -86,7 +87,7 @@ export default class MainUi extends React.Component
                 </div>
                 {
                     this.state.hideData?
-                    <div className="three-days">
+                    <div className="two-days">
                         <Tabs>
                         <TabList className="list">
                             <Tab>Today</Tab>

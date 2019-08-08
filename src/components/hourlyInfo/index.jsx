@@ -29,7 +29,7 @@ export default class ThreeHourlyInfo extends React.Component
                     Weather Info: {passedData.weather[0].main}
                 </div>
             </div>
-            <hr/>            
+            <hr className="hr-line"/>            
         </div>
     }
 }

@@ -14,7 +14,11 @@
         
         
     }
-    .three-days{
+
+    .hr-line{
+        margin-right: 2%;
+    }
+    .two-days{
         width:98%;
         height:80%;
         background: url(../../resource/background.jpg);
@@ -25,7 +29,7 @@
     }
     .search-section{
         display: flex;
-        height:20%;
+        height:fit-content;
         flex-direction: column;
         width:100%;
         align-items: center;
