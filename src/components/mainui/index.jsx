@@ -89,21 +89,21 @@ export default class MainUi extends React.Component
                     this.state.hideData?
                     <div className="two-days">
                         <Tabs>
-                        <TabList className="list">
-                            <Tab>Today</Tab>
-                            <Tab>Tomorrow</Tab>
-                        </TabList>
-                    
-                        <TabPanel>
-                            {this.state.today.map((info)=>{
-                                    return <ThreeHourlyInfo passedData={info}/>
-                            })}
-                        </TabPanel>
-                        <TabPanel>
-                            {this.state.tomorrow.map((info)=>{
-                                    return <ThreeHourlyInfo passedData={info}/>
-                            })}
-                        </TabPanel>
+                            <TabList className="list">
+                                <Tab>Today</Tab>
+                                <Tab>Tomorrow</Tab>
+                            </TabList>
+                        
+                            <TabPanel>
+                                {this.state.today.map((info)=>{
+                                        return <ThreeHourlyInfo passedData={info}/>
+                                })}
+                            </TabPanel>
+                            <TabPanel>
+                                {this.state.tomorrow.map((info)=>{
+                                        return <ThreeHourlyInfo passedData={info}/>
+                                })}
+                            </TabPanel>
                         </Tabs>
                     </div>
                     :null

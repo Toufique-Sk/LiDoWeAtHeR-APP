@@ -8,9 +8,10 @@
     width: 100%;
     
     .title{
-        font-size: 20px;
+        font-size: 120%;
         align-content: center;
         height: 5.5%;
+        margin-block-end: 10px
         
         
     }
@@ -20,11 +21,14 @@
     }
     .two-days{
         width:98%;
-        height:80%;
+        height:100%;
+        overflow: auto;
         
         .react-tabs__tab{
             width:45%;
+            
         }
+        
     }
     .search-section{
         display: flex;
@@ -33,6 +37,7 @@
         width:100%;
         align-items: center;
         .search-box{
+            margin-top:20px;
             position: relative;
             
             
@@ -78,7 +83,7 @@
         }
         .button-view{
             margin-top: 10px;
-            height: 15%;
+            height: fit-content;
             width: 40%;
             .button-get {
                 color: #fff !important;
