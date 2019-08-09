@@ -5,8 +5,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import "react-tabs/style/react-tabs.css";
 import ThreeHourlyInfo from "../hourlyInfo";
 
-
-const API_KEY= "f9eb6cea9d5a292706b1bb65ba45e432";
+const API_KEY= process.env.REACT_APP_WEATHER_API_KEY;
 
 export default class MainUi extends React.Component
 {
