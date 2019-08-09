@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-##Description
-
-A web app to fetch 3-hourly weather forecast by city-name.  Weather data is fetched <br/>
-from *openweathermap* api
-=======
 
 **Description**
 
@@ -26,4 +20,3 @@ from *openweathermap* api.<br/>
  <br/>
   The app is deployed in heroku, so to see live demo goto: http://weatherlidoapp.herokuapp.com/
   
->>>>>>> be542a33cba7d64ad8fd5da24b043187f55f6d9e
