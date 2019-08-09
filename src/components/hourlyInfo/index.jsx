@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.scss"
-
+import Clock from "../../resource/clock.png"
 import MaxMin from "../../resource/min-max.png"
 
 
@@ -23,14 +23,19 @@ export default class ThreeHourlyInfo extends React.Component
         return <div className="cards">
             <div className="data-view">
                 <div className="time-view"> 
-                    Time: {passedData.dt_txt.split(" ")[1]}<br/>
+                    <div className="time-image">
+                        <img src={Clock} alt="Time" width="50" height="40"></img>
+                    </div>
+                    <div className="time-data">
+                        {passedData.dt_txt.split(" ")[1]}<br/>
+                    </div>
                 </div>
                 <div className="info-view">
                     <div className="humidity-view">
                         {passedData.main.humidity} %<br/>
                     </div>
                     <div className="weather-img">
-                        <img src={require('../../resource/' + passedData.weather[0].main + '.png')} alt={passedData.weather[0].main} width="40" height="40"></img>
+                        <img src={require('../../resource/' + passedData.weather[0].main + '.png')} alt={passedData.weather[0].main} width="30" height="30"></img>
                     </div>
                     <div className="temp-img">
                         <img src={MaxMin} alt="MinMax" width="30" height="40"/>
