@@ -24,7 +24,7 @@ export default class ThreeHourlyInfo extends React.Component
             <div className="data-view">
                 <div className="time-view"> 
                     <div className="time-image">
-                        <img src={Clock} alt="Time" width="50" height="40"></img>
+                        <img src={Clock} alt="Time" width="40" height="40"></img>
                     </div>
                     <div className="time-data">
                         {passedData.dt_txt.split(" ")[1]}<br/>
