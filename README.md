@@ -41,7 +41,7 @@ from *openweathermap* api.<br/>
 
   First we need to get all the dependencies with command **npm install**
 
-  We can run locally with command ***npm start***, This will start a local server *localhost:3000*
+  We can run locally with command ***npm start***, This will start a local server *http://localhost:3000*
   
   
  **where I can see the demo of this app?**<br/>
