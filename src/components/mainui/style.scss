@@ -20,16 +20,18 @@
         margin-right: 2%;
     }
     .two-days{
-        width:98%;
+        width:95%;
         height:100%;
+        overflow-X: hidden;
+        
     
         
+        
         .react-tabs__tab{
-            width:45%;
-
-            
-            
+            width:45%; 
         }
+        
+        
         
     }
     .search-section{
